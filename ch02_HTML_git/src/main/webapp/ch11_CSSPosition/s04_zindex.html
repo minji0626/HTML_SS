@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>z-index</title>
+<style type="text/css">
+
+/* 
+z-index: 요소를 쌓는 순서 정하기
+z-index:숫자 값;
+ */
+div.gallery figure{
+	position: absolute;
+}
+#f1 {
+	left: 0;
+	top: 0;
+	z-index: 3;
+}
+#f2 {
+	left:150px;
+	top: 50px;
+	z-index: 2;
+}
+#f3 {
+	left: 300px;
+	top: 100px;
+	z-index: 1;
+}
+
+</style>
+</head>
+<body>
+<div class="gallery">
+	<figure id="f1">
+		<img alt="" src="../files/S_1.jpg" width="200" height="200">
+	</figure>
+	<figure id="f2">
+		<img alt="" src="../files/S_2.jpg" width="200" height="200">
+	</figure>
+	<figure id="f3">
+		<img alt="" src="../files/S_3.jpg" width="200" height="200">
+	</figure>
+	
+	
+</div>
+</body>
+</html>
