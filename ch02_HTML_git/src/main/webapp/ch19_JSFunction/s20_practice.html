@@ -29,6 +29,10 @@
         등급 :
 
         */
+        let kor = parseInt(prompt('국어 점수를 입력하세요.', ''));
+        let eng = parseInt(prompt('영어 점수를 입력하세요.', ''));
+        let math = parseInt(prompt('수학 점수를 입력하세요.', ''));
+
         let sum = kor + eng + math;
         let avg = sum / 3
 
@@ -61,10 +65,6 @@
             }
             document.write('등급 : ' + grade + '<br>');
         }
-
-        let kor = parseInt(prompt('국어 점수를 입력하세요.', ''));
-        let eng = parseInt(prompt('영어 점수를 입력하세요.', ''));
-        let math = parseInt(prompt('수학 점수를 입력하세요.', ''));
 
         if (kor, eng, math < 0 || kor, eng, math > 100) {
             document.write('점수를 잘못 입력하셨습니다.');
