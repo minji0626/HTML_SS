@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eval 함수</title>
+<meta charset="UTF-8">
+<title>eval함수</title>
 </head>
 <body>
-    <script>
-        // document.write('안녕하세요.')
-        // document.write('감사합니다.')
-
-        //eval (string) : string을 자바스크립트 코드로 실행
-        let willEval ='' ;
-        //주의 ;를 명시해야 동작함
-        willEval += 'var number = 10;';
-        willEval += 'alert(number);';
-
-        eval(willEval);
-        alert(number);
-    </script>
+<script type="text/javascript">
+	//eval(string) : string을 자바스크립트 코드로 실행
+	let willEval = '';
+	//(주의);를 명시해야 동작함
+	willEval += 'var number = 10;';
+	willEval += 'alert(number);';
+	
+	eval(willEval);
+	alert(number);
+</script>
 </body>
 </html>
+
+
+
+
+
+
+
