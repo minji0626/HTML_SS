@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ES6에서 도입된 화살표 함수(arrow function)은 function 키워드 대신
+        // 화살표(fat arrow =>)을 사용하여 좀 더 간략한 방법으로 함수를 선언할 수 있다.
+        // 화살표 함수는 항상 익명 함수로 정의한다.
+
+        //익명 함수로 정의
+        let print = (x) => { // 화살표 함수 정의
+            document.write(x);
+        };
+        print(10);
+        document.write('<br>------------------------<br>');
+
+
+        let print2 = (x) => { //화살표 함수 정의
+            return x + 10;
+        };
+        //let number =  print2(10); // 변수를 굳이 명시할 필요는 없다
+        document.write( print2(10) + '<br>------------------------<br>');
+
+        let print3 = (x,y) => {
+            return x * y;
+        }
+        document.write(print3(3,6) + '<br>------------------------<br>');
+
+        //매개변수가 하나일 경우에는 인자를 정의할 때 괄호를 생략할 수 있다.
+        let print4 = (x) => {
+            return x * 10;
+        };
+        document.write(print4(5));
+        document.write('<br>------------------------<br>');
+        
+        //화살표 함수 코드 블럭을 지정하지 않고 한 문장으로 작성시 return문을 쓰지 않아도 화살표 오른쪽 표현식의 계산 결과값이 반환된다.
+        let print5 = (x,y) =>  x * y;
+        document.write(print5(2,3));
+    </script>
+</body>
+</html>

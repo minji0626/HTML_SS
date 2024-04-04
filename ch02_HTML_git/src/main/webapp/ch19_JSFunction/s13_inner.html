@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내부 함수</title>
+</head>
+<body>
+    <script>
+        function f() {
+            let n =123;
+            //내부 함수 
+            function g(){
+                document.write('n = ' + n + '<br>');
+                document.write('g 함수 호출');
+            }
+            g();
+        }
+        f();
+    </script>
+</body>
+</html>

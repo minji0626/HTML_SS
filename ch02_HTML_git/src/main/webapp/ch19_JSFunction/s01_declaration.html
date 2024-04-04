@@ -9,7 +9,7 @@
 
 <body>
     <script>
-        //선언적 함수
+        //선언적 함수 (이름이 있는 함수)
         //          함수명
         function check() {
             document.write('호출하면 동작함<br>');
@@ -31,7 +31,9 @@
         var number = check3(10);
         document.write('number : ' + number + '<br>');
 
-        //익명 함수
+        document.write('------익명 함수------<br>');
+
+        //익명 함수 (이름이 없는 함수)
         var play = function () { 
             document.write('운동을 좋아해요 <br>');
         };
@@ -49,6 +51,8 @@
         }
         var result = play3(5,8);
         document.write('result = ' + result + '<br>');
+
+        document.write('-------인라인 방식------<br>');
 
         //정의한 함수를 inline 방식으로 호출
         function checkIt() {

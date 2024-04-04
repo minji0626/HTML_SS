@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>const</title>
+</head>
+
+<body>
+    <script>
+        const a = 10; //상수
+        document.write(a + '<br>');
+        document.write('---------------<br>');
+
+        //
+        // a = 20;
+        // document.write(a + '<br>');
+
+        function test() {
+            const b = 20;
+            document.write(b + '<br>');
+        }
+        test();
+        //const는 블럭 레벨 스코프로 동작하기 때문에
+        // 함수를 벗어나면 호출이 불가능하다.
+        // document.write(b);
+    </script>
+</body>
+
+</html>
